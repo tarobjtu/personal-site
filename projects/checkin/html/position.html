@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale = 1, maximum-scale = 1, user-scalable = yes">
+		<title>Postion</title>
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/gmap3.min.js"></script>
+		<link rel="stylesheet" href="css/position.css"/>
+		<script type="text/javascript">
+			$(function(){
+				var position = {
+					lat : null,
+					lng : null,
+					acc: null,
+					success : function(pos){
+						this.lat = pos.coords.latitude;
+						this.lng = pos.coords.longitude;
+						this.acc = pos.coords.accuracy;     
+						$("#pos").html(this.lat+","+this.lng+","+this.acc+"<br>"+(new Date()));
+						showInMap(this.lat, this.lng);
+					},
+					error : function (){
+						$("#pos").html("お客様の携帯電話はGPSをサポートできません。");
+					}
+				};
+				function showInMap(lat, lng){
+					console.log(lat +" "+ lng);
+					$(".gmap").gmap3({
+						action:"init",
+						options:{
+							center:[lat, lng],
+							zoom:18
+						}
+						},{
+						action: "addMarker",
+						latLng: [lat, lng],
+						map: {
+							center: true,
+							mapTypeId: google.maps.MapTypeId.HYBRID
+						},
+						infowindow:{
+							options:{
+								size: new google.maps.Size(50,20),
+								content:"<div>こちらは今お客様の所なんです。</div>"
+							}
+						}
+					});
+				}
+				navigator.geolocation.watchPosition(position.success, position.error);
+			});
+		</script>
+	</head>
+	<body>
+		<h1>現在の位置情報を表示</h1>
+		<h2>座標情報</h2>
+		<div id="pos">lat, lng, accuracy</div>
+		<h2>Google Mapで情報</h2>
+		<div class="gmap"></div>
+	</body>
+</html>				

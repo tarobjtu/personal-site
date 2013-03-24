@@ -1,0 +1,189 @@
+body{
+}
+.wrapper{
+	width:90%;
+	margin:0 auto;
+	padding-bottom:200px;
+}
+h1{
+	font-weight:bold;
+	font-size:2.0em;
+	text-align:center;
+	padding:50px 0 20px;
+}
+h2{
+	color:#3f3f3f;
+	font-weight:bold;
+	margin-top:30px;
+	padding:10px 20px;
+	background:#87d8ff;
+	border-top-right-radius:30px;
+}
+input{
+	padding:3px 15px;
+}
+select{
+	padding:2px;
+	border-radius:3px;
+	border:1px solid #aaaaaa;
+}
+
+/* Syntax high lighter */
+.syntaxhighlighter{
+	min-height:300px;
+	max-height:500px;
+}
+.syntaxhighlighter table td.code .line:nth-child(odd){
+	background:#f4f4f4 !important;
+	padding:0.1em 1em !important;
+}
+.key-variable{
+	color:red !important;
+}
+/* \Syntax high lighter */
+
+
+.error {
+	color:red;
+	line-height:170%;
+	}
+.step{
+	margin-top:20px;
+	padding:20px;
+	border-radius:10px;
+	border:1px solid #e3e3e3;
+	overflow:auto;
+}
+#step02-info{
+	font-size:0.875em;
+}
+#step02-info .left{
+	float:left;
+	width:400px;
+}
+#step02-info .right{
+	float:right;
+	width:280px;
+	border:1px solid #e3e3e3;
+	margin-top:10px;
+	padding:10px;
+	border-radius:8px;
+}
+#step02-info .right >*{
+	display:inline-block;
+}
+#step02-info p.notice, #step02-info p#csv-table-info{
+	margin:10px;
+}
+
+#step02 {
+	min-height:150px;
+	max-height:500px;
+}
+#csv-table{
+	line-height: 1.5;
+    font-size: 0.750em;
+	width:100%;
+}
+#csv-table thead tr{
+	background:#87d8ff;
+}
+#csv-table thead th{
+	font-weight:bold;
+	text-align:center;
+	padding:4px 10px;
+}
+#csv-table thead th, #csv-table tbody td{
+	white-space:nowrap;
+	border-right:1px solid #e3e3e3;
+}
+#csv-table tbody td{
+	padding:2px 10px;
+}
+#csv-table tbody tr:nth-child(odd){
+	background:#f9f9f9;
+}
+#csv-table tbody tr:nth-child(even){
+	background:#cdefff;
+}
+
+#form02-output{
+	margin-top: 30px;
+	font-size:0.875em;
+}
+
+.modal{
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:100;
+}
+.modal .grey-bg{
+	background:#000;
+	width:100%;
+	height:100%;
+	opacity:0.7;
+}
+.modal .modal-window{
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-400px;
+	margin-top:-200px;
+	overflow:auto;
+	background:#fff;
+	min-width:800px;
+	min-height:400px;
+	padding:30px;
+	border-radius:20px;
+}
+
+.modal .modal-window h3{
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 1.6em;
+}
+.modal .modal-window #link{
+	display:inline-block;
+	margin: 40px 0px 10px;
+	background:#92d3fc;
+	padding: 10px 25px;
+	border-radius:18px;
+	font-weight:bold;
+	color:#000;
+}
+.modal .modal-window #link:hover{
+	background:#5abefe;
+}
+
+#report{
+	line-height: 1.5;
+	width:100%;
+}
+#report thead tr{
+	background:#ececec;
+}
+#report thead th{
+	font-weight:bold;
+	text-align:center;
+	padding:4px 15px;
+}
+#report thead th, #report tbody td, #report tbody th{
+	white-space:nowrap;
+	border:1px solid #e3e3e3;
+}
+#report tbody td, #report tbody th{
+	padding:2px 15px;
+	background:#87d8ff;
+}
+#report tbody th{
+	text-align:center;
+}
+#report tbody tr.t-error td, #report tbody tr.t-error th{
+	background: #ff6262;
+	font-weight: bold;
+	color: #fff;
+}

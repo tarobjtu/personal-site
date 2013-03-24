@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Bezier Curve</title>
+	<link rel="stylesheet" href="css/canvas.css"/>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Marko+One|Limelight" />
+<body>
+</head>
+	<div id="wrap">
+		<h1>Bezier Curve</h1>
+		<h2>Draw a Bezier Curve with HTML5 Canvas</h2>
+		<div id="board">
+			<div id="show"></div>
+			<ul id="dashboard">
+				<li>
+					<span>Begin point X:</span>
+					0<input id="0" type="range" value="100" min="0" max="400" />400
+				</li>
+				<li>
+					<span>Begin point Y:</span>
+					0<input id="1" type="range" value="300" min="0" max="400" />400
+				</li>
+				<li>
+					<span>Control point01 X:</span>
+					0<input id="2" type="range" value="50" min="0" max="400" />400
+				</li>
+				<li>
+					<span>Control point01 Y:</span>
+					0<input id="3" type="range" value="50" min="0" max="400" />400
+				</li>
+				<li>
+					<span>Control point02 X:</span>
+					0<input id="4" type="range" value="350" min="0" max="400" />400
+				</li>
+				<li>
+					<span>Control point02 Y:</span>
+					0<input id="5" type="range" value="160" min="0" max="400" />400
+				</li>
+				<li>
+					<span>End point X:</span>
+					0<input id="6" type="range" value="330" min="0" max="400" />400
+				</li>
+				<li>
+					<span>End point Y:</span>
+					0<input id="7" type="range" value="300" min="0" max="400" />400
+				</li>
+			</ul>
+			<div id="buttonboard">
+				<button id="save-button">save</button>
+				<button id="export-button" disabled="disabled" value="Export canvas code">export</button>
+			</div>
+		</div>
+		
+	</div>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.canvas.js"></script>
+</body>
+</html>

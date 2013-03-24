@@ -1,0 +1,243 @@
+body{
+	background:#252d36 url(../img/ios-background-2.jpg) 0 0 repeat;
+}
+
+.head{
+	height:180px;
+	margin:0 auto;
+	}
+.head h1{
+	padding:70px 0 0 0;
+}
+#navigator{
+	font-size:85%;
+	line-height:1.5;
+	background:url(../img/bar.png) 0 -94px repeat-x;
+	position:relative;
+	width: 750px;
+	height:39px;
+	margin:30px auto;
+	font-weight:bold;
+}
+#navigator .prefix{
+	background:url(../img/bar.png) 0 -47px no-repeat;
+	position:absolute;
+	width:78px;
+	height:43px;
+	top:0px;
+	left:-78px;
+}
+#navigator .suffix{
+	background:url(../img/bar.png) 0 0 no-repeat;
+	position:absolute;
+	width:78px;
+	height:43px;
+	top:0px;
+	right: -78px;
+}
+#navigator a{
+	display:inline-block;
+	padding:10px 20px;
+	color:#FFF;
+	outline:none;
+	text-shadow: 1px 1px 1px #315218;
+	text-decoration:none;
+}
+.active{
+	background:url(../img/bar.png) 0 -138px repeat-x;
+	box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2), -1px 0 0 rgba(255, 255, 255, 0.2), 1px 0 1px rgba(0,0,0,0.2) inset, -1px 0 1px rgba(0,0,0,0.2) inset;
+}
+#container{
+	font-size:85%;
+	line-height:1.5;
+}
+#stage{
+	margin:30px auto;
+	width:720px;
+}
+#container li{
+	float:left;
+	padding:20px 15px;
+	width:150px;
+	height:190px;
+}
+#stage li strong{
+	display:block;
+	color:#FFF;
+	font-size: 1.2em;
+}
+#stage li span{
+	display:block;
+	font-size:80%;
+	color:#a1aebc;
+}
+#container li a{
+	outline:none;
+}
+
+/* --------------------------------------------------
+					  POP UP
+-------------------------------------------------- */
+.popup{
+	font-family:'Microsoft Yahei', 'Helvetica', Arial, 'Liberation Sans', FreeSans, sans-serif;
+	display:none;
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:150px;
+	text-align:center;
+}
+.popup .logo{
+	position:relative;
+	z-index:10;
+}
+.popup .logo img{
+	position:absolute;
+	top:150px;
+	left:49%;
+}
+.popup .close{
+	position:absolute;
+	top: -250px;
+	right: 1000px;
+	z-index:10;
+	cursor:pointer;
+	display:none;
+}
+.popup .main{
+	display:none;
+	position:relative;
+	background:url(../img/ios-background.jpg) 0 0 repeat;
+	height:1px;
+	width:1px;
+	left:50%;
+}
+.popup .main .main-content{
+	width:960px;
+	margin:0 auto;
+}
+.popup .main h2{
+	position:absolute;
+	top:150px;
+}
+.popup .main .advise-browser{
+	float:left;
+	width:500px;
+	text-align:left;
+	padding-left:20px;
+	height:150px;
+}
+.popup .main .browser{
+	position:relative;
+}
+.popup .main .browser li{
+	position:absolute;
+	top:150px;
+}
+.popup .main .browser li.one{
+	left:0;
+}
+.popup .main .browser li.two{
+	left:100px;
+}
+.popup .main .browser li.three{
+	left:200px;
+}
+.popup .main .browser li.four{
+	left:300px;
+}
+.popup .main .browser li.five{
+	left:400px;
+}
+.popup .profile{
+	text-align:left;
+	float:right;
+	width: 360px;
+	padding-top:10px;
+	padding-right: 20px;
+}
+.popup .profile .thumbnail{
+	position:relative;
+	float:left;
+}
+.popup .profile .thumbnail img{
+	position:absolute;
+	left:1000px;
+}
+.popup .profile .title{
+	position:relative;
+	left: 72px;
+	top: 10px;
+}
+.textshadow .popup .profile .title{
+	font-size: 130%;
+	font-weight:bold;
+	color:#fff;
+	text-shadow: 2px 1px 3px #000000;
+	filter: dropshadow(color=#000000, offx=2, offy=1);
+}
+.no-textshadow .popup .profile .title li{
+	width:31px;
+	height:31px;
+	text-indent:-9999px;
+}
+.no-textshadow .popup .profile .title li.one{
+	background:url(../img/profile/profile_ttl01.png) 0 0 no-repeat;
+}
+.no-textshadow .popup .profile .title li.two{
+	background:url(../img/profile/profile_ttl02.png) 0 0 no-repeat;
+}
+.no-textshadow .popup .profile .title li.three{
+	background:url(../img/profile/profile_ttl03.png) 0 0 no-repeat;
+}
+.no-textshadow .popup .profile .title li.four{
+	background:url(../img/profile/profile_ttl04.png) 0 0 no-repeat;
+}
+.no-textshadow .popup .profile .title li.five{
+	background:url(../img/profile/profile_ttl05.png) 0 0 no-repeat;
+}
+.no-textshadow .popup .profile .title li.six{
+	background:url(../img/profile/profile_ttl06.png) 0 0 no-repeat;
+}
+.no-textshadow .popup .profile .title li.seven{
+	background:url(../img/profile/profile_ttl07.png) 0 0 no-repeat;
+}
+.popup .profile .title li{
+	position:absolute;
+	top:0px;
+	left:1000px;
+}
+.popup .profile .words{
+	position:relative;
+	margin-top: 47px;
+	margin-left:8px;
+	color:#fff;
+	font-size: 86%;
+	letter-spacing:1px;
+	text-shadow: 1px 0px 3px #000000;
+    filter: dropshadow(color=#000000, offx=1, offy=0);
+}
+.popup .profile .words li{
+	position:absolute;
+	left:1000px;
+	width: 360px;
+}
+.popup .profile .words li span{
+	padding-left: 30px;
+}
+.popup .profile .words li.one{
+	top:0px;
+}
+.popup .profile .words li.one span{
+	padding-left: 63px;
+}
+.popup .profile .words li.two{
+	top: 20px;
+}
+.popup .profile .words li.three{
+	top: 40px;
+}
+.popup .profile .words li.four{
+	top: 59px;
+}

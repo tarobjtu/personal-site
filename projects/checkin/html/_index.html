@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+	<head>
+		<meta charset="UTF-8">
+		<!-- <meta name = "viewport" content = "width=device-width, initial-scale = 1, maximum-scale = 1, user-scalable = no"> -->
+		<meta property="fb:app_id" content="260874077337184" /> 
+		<meta property="og:type" content="tarobjtu.com" /> 
+		<meta property="og:title" content="Facebook App" /> 
+		<meta property="og:image" content="http://www.tarobjtu.com/img/logo.jpg" /> 
+		<meta property="og:description" content="Check-ins" /> 
+		<meta property="og:url" content="http://www.tarobjtu.com/"> 
+		<title>Facebook App</title>
+		<link rel="stylesheet" href="css/checkin.css"/>
+		<script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</head>
+	<body>
+		<div id="fb-root"></div>
+		<script>
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=260874077337184";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+		
+		<div class="wrapper">
+			<!--<div class="timeline">
+				<div class="fb-add-to-timeline" data-show-faces="false"></div>
+			</div> -->
+			<div class="title">
+				<h1>お客様のFacebook情報</h1>
+			</div>
+			<div class="warning">
+				<p></p>
+			</div>
+			
+			<!-- login -->
+			<div class="login">
+				<h2><img src="img/btn.png" width="20" />Login（ログイン）</h2>
+				<fb:login-button show-faces="false" autologoutlink="true" size="medium" max-rows="1" scope="user_checkins, user_status, publish_checkins" onlogin='window.location.reload()'></fb:login-button>
+				<fb:login-button show-faces="true" autologoutlink="true" size="medium" max-rows="1" scope="user_checkins, user_status, publish_checkins" onlogin='window.location.reload()'></fb:login-button>
+				<div class="user-info"></div>
+			</div>
+			
+			<!-- feed -->
+			<div class="feed">
+				<h2><img src="img/btn.png" width="20" />Feed Dialog（フィード ダイアログ）</h2>
+				<span>右のボタンをクリックしてください：　</span><button>Post to feed</button>
+			</div>
+			
+			<!-- checkins -->
+			<div class="checkins">
+				<h2><img src="img/btn.png" width="20" />Check In（スポット）</h2>
+				<div>
+					<span>Check In（スポット）：　</span><a href="checkin.html" target="_blank"><img src="img/checkin.jpg" alt="check in" width="50" /></a>
+				</div>
+			</div>
+		</div>
+		
+		<!-- shoplist -->
+		<div class="shop">
+			<h2><img src="img/btn.png" width="20" />商店情報ページ</h2>
+			<span>商店情報ページ：</span><a href="/shoplist.html" target="_blank" ><img src="img/shop.png" alt="shop" width="100" /></a>
+		</div>
+		
+		<!-- distance -->
+		<div class="distance">
+			<h2><img src="img/btn.png" width="20" />距離計算</h2>
+			<span>距離計算：</span><a href="/distance.html" target="_blank" ><img src="img/google-map-logo.png" alt="shop" width="200" /></a>
+		</div>
+		
+		<!-- gps -->
+		<div class="gps">
+			<h2><img src="img/btn.png" width="20" />携帯電話のGPSでユーザー現在の位置情報を表示</h2>
+			<span>お客様今の場所はチェックしてください：　</span>
+		<a href="/position.html" target="_blank" ><img src="img/location.jpg" alt="" width="50" /></a>
+		</div>
+		
+		<!-- friendlist -->
+		<div class="friendlist">
+		<h2><img src="img/btn.png" width="20" />Friend List（友達資料）</h2>
+		<div class="friend-list"></div>
+		</div>
+		</div>
+		</body>
+		</html>					

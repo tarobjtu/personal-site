@@ -1,0 +1,767 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title></title>
+    <meta content="" name="Description" />
+    <meta content="" name="Keywords" />
+    <meta content="text/javascript" http-equiv="Content-Script-Type" />
+    <meta content="text/css" http-equiv="Content-Style-Type" />
+    <link href="/common/css/print.css" media="print" rel="stylesheet" type="text/css" />
+    <link href="/common/css/general.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="/common/css/global.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="/common/css/page.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="/jp/ja/common/css/global.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="/jp/common/css/page.css" media="all" rel="stylesheet" type="text/css" />
+    <script src="/common/js/jquery.js" type="text/javascript"></script>
+    <script src="/common/js/global.js" type="text/javascript"></script>
+    <script src="/common/js/page.js" type="text/javascript"></script>
+    <script src="/jp/common/js/page.js" type="text/javascript"></script>
+  </head>
+  <body class="s-local s-page">
+    <!-- Skip Link -->
+    <p id="G-SKIP"><a href="#G-MAIN-AREA">本文へ</a></p>
+    <!-- /Skip Link -->
+    
+    
+    <!-- No Script -->
+    <noscript><p id="G-NOSCRIPT">当サイトでは、JavaScriptを使用しております。ご覧になる際はブラウザの設定よりJavaScriptを有効にしてください。</p></noscript>
+    <!-- /No Script -->
+    <div class="m-layout">
+      <!-- Header -->
+<div id="G-HEADER">
+  <!-- Select Region -->
+  <div id="G-REGION">
+    <div class="inner">
+      <dl class="item-1">
+        <dt>Asia</dt>
+        <dd>
+          <dl>
+            <dt>Japan</dt>
+            <dd>
+              <ul>
+                <li><a href="">日本語</a></li>
+                <li><a href="">English</a></li>
+              </ul>
+            </dd>
+            <dt>China</dt>
+            <dd>
+              <ul>
+                <li><a href="">中文</a></li>
+                <li><a href="">粤語</a></li>
+              </ul>
+            </dd>
+            <dt>Korea</dt>
+            <dd>
+              <ul>
+                <li><a href="">Korean</a></li>
+              </ul>
+            </dd>
+          </dl>
+        </dd>
+      </dl>
+      <dl class="item-2">
+        <dt>America</dt>
+        <dd>
+          <dl>
+            <dt>USA</dt>
+            <dd>
+              <ul>
+                <li><a href="">English</a></li>
+              </ul>
+            </dd>
+          </dl>
+        </dd>
+      </dl>
+      <dl class="item-3">
+        <dt>Europe</dt>
+        <dd>
+          <dl>
+            <dt>Europe</dt>
+            <dd>
+              <ul>
+                <li><a href="">English</a></li>
+              </ul>
+            </dd>
+          </dl>
+        </dd>
+      </dl>
+      <p class="m-text-button s-plain site"><a href=""><span>Global Site</span></a></p>
+      <p class="close"><a href=""><img alt="close" height="21" src="/common/img/close.gif" width="21" /></a></p>
+    </div>
+  </div>
+  <!-- /Select Region -->
+  <!-- Upper Header -->
+  <div class="upper">
+    <dl class="inquiry">
+      <dt>お問い合わせ :</dt>
+      <dd>
+        <ul>
+          <li><a href="">製品に関して</a></li>
+          <li><a href="">製品以外に関して</a></li>
+        </ul>
+      </dd>
+    </dl>
+    <p><a href="">FAQ</a></p>
+    <dl class="size">
+      <dt>Size:</dt><dd class="normal"><a data-size="normal" href="">normal</a></dd><dd class="large"><a data-size="large" href="">large</a></dd>
+    </dl>
+    <div>
+      <ul id="G-SELECT-LANG">
+        <li class="current"><a href="">Japanese</a></li>
+        <li><a href="">English</a></li>
+      </ul>
+      <p id="G-SELECT-REGION"><a href="">Select Region</a></p>
+    </div>
+  </div>
+  <!-- /Upper Header -->
+  <!-- Logo -->
+  <div class="logo">
+    <p><a href="/jp/ja/index.html"><img alt="NITTO DENKO" height="30" src="/common/img/logo.png" width="255" /></a></p>
+    <p class="text">日本サイト</p>
+  </div>
+  <!-- /Logo -->
+  <!-- Search Form -->
+  <div class="g-clearfix">
+    <div id="G-SEARCH">
+      <form action="" method="get"><input name="" type="text" value="" /><input alt="検索する" src="/common/img/nil.gif" type="image" /></form>
+    </div>
+  </div>
+  <!-- /Search Form -->
+  <!-- Global Menu -->
+  <ul id="G-GLOBAL-MENU">
+    <li class="item-1">
+      <a href="/jp/ja/product/index.html">製品情報</a>
+      <div class="frame">
+        <ul class="list">
+          <li><a href="/jp/ja/product/index.html">製品情報TOP</a></li>
+          <li><a href="/jp/ja/product/industry/index.html">業界から探す</a></li>
+          <li><a href="/jp/ja/product/spec/index.html">仕様から探す</a></li>
+          <li><a href="/jp/ja/product/function/index.html">機能から探す</a></li>
+          <li><a href="/jp/ja/product/datasheet/index.html">種類から探す</a></li>
+        </ul>
+        <ul class="thumbs m-hover"><li><a href="/jp/ja/product/datasheet/double/index.html">
+            <img alt="両面接着テープ" height="63" src="/common/img/thumbs_double.jpg" width="108" />
+            両面接着テープ
+          </a></li><li><a href="/jp/ja/product/datasheet/sealing/index.html">
+            <img alt="シーリング材" height="63" src="/common/img/thumbs_sealing.jpg" width="108" />
+            シーリング材
+          </a></li><li><a href="/jp/ja/product/datasheet/surface/index.html">
+            <img alt="表面保護材" height="63" src="/common/img/thumbs_surface.jpg" width="108" />
+            表面保護材
+          </a></li><li><a href="/jp/ja/product/datasheet/const/index.html">
+            <img alt="工事・施工用材料" height="63" src="/common/img/thumbs_const.jpg" width="108" />
+            工事・施工用材料
+          </a></li><li><a href="/jp/ja/product/datasheet/maskingtape/index.html">
+            <img alt="マスキングテープ" height="63" src="/common/img/thumbs_maskingtape.jpg" width="108" />
+            マスキングテープ
+          </a></li><li><a href="/jp/ja/product/datasheet/gasket/index.html">
+            <img alt="ガスケット材料" height="63" src="/common/img/thumbs_gasket.jpg" width="108" />
+            ガスケット材料
+          </a></li><li><a href="/jp/ja/product/datasheet/barcode/index.html">
+            <img alt="機能性熱転写システム" height="63" src="/common/img/thumbs_barcode.jpg" width="108" />
+            機能性熱転写システム
+          </a></li><li><a href="/jp/ja/product/datasheet/clean/index.html">
+            <img alt="クリーンルーム" height="63" src="/common/img/thumbs_clean.jpg" width="108" />
+            クリーンルーム
+          </a></li><li><a href="/jp/ja/product/datasheet/flexible/index.html">
+            <img alt="フレキシブルプリント基板" height="63" src="/common/img/thumbs_flexible.jpg" width="108" />
+            フレキシブルプリント基板
+          </a></li><li><a href="/jp/ja/product/datasheet/optical/index.html">
+            <img alt="光学関連製品" height="63" src="/common/img/thumbs_optical.jpg" width="108" />
+            光学関連製品
+          </a></li><li><a href="/jp/ja/product/datasheet/semicon/index.html">
+            <img alt="半導体製造プロセス製品" height="63" src="/common/img/thumbs_semicon.jpg" width="108" />
+            半導体製造プロセス製品
+          </a></li><li><a href="/jp/ja/product/datasheet/e_parts/index.html">
+            <img alt="電子部品用テープ" height="63" src="/common/img/thumbs_e_parts.jpg" width="108" />
+            電子部品用テープ
+          </a></li><li><a href="/jp/ja/product/datasheet/e_parts/heat_activated/004/index.html">
+            <img alt="ふっ素樹脂製品" height="63" src="/common/img/thumbs_heat_activated.jpg" width="108" />
+            ふっ素樹脂製品
+          </a></li><li><a href="/jp/ja/product/datasheet/temish/index.html">
+            <img alt="ふっ素樹脂多孔質フィルム製品 TEMISH&amp;reg;" height="63" src="/common/img/thumbs_temish.jpg" width="108" />
+            ふっ素樹脂多孔質フィルム製品 TEMISH&reg;
+          </a></li><li><a href="/jp/ja/product/datasheet/film/index.html">
+            <img alt="多孔質フィルム製品（ニトセップ／サンマップ）" height="63" src="/common/img/thumbs_film.jpg" width="108" />
+            多孔質フィルム製品（ニトセップ／サンマップ）
+          </a></li><li><a href="/jp/ja/product/datasheet/membrane/index.html">
+            <img alt="メンブレン製品" height="63" src="/common/img/thumbs_membrane.jpg" width="108" />
+            メンブレン製品
+          </a></li><li><a href="/jp/ja/product/datasheet/medical/index.html">
+            <img alt="メディカル製品" height="63" src="/common/img/thumbs_medical.jpg" width="108" />
+            メディカル製品
+          </a></li><li><a href="/jp/ja/product/datasheet/packaging/index.html">
+            <img alt="包装用テープ" height="63" src="/common/img/thumbs_packaging.jpg" width="108" />
+            包装用テープ
+          </a></li><li><a href="/jp/ja/product/datasheet/pac_equip/index.html">
+            <img alt="包装機器" height="63" src="/common/img/thumbs_pac_equip.jpg" width="108" />
+            包装機器
+          </a></li></ul>
+      </div>
+    </li>
+    <li class="item-2">
+      <a href="/jp/ja/businessfields/index.html">事業領域</a>
+      <div class="frame">
+        <ul class="list">
+          <li><a href="/jp/ja/businessfields/index.html">事業領域TOP</a></li>
+          <li><a href="/jp/ja/businessfields/automotives/index.html">輸送機器</a></li>
+          <li><a href="/jp/ja/businessfields/house/index.html">住宅</a></li>
+          <li><a href="/jp/ja/businessfields/home_appliance/index.html">家電</a></li>
+          <li><a href="/jp/ja/businessfields/medical/index.html">医療</a></li>
+          <li><a href="/jp/ja/businessfields/electronics/index.html">電子デバイス</a></li>
+          <li><a href="/jp/ja/businessfields/material/index.html">素材</a></li>
+          <li><a href="/jp/ja/businessfields/infrastructure/index.html">社会インフラ</a></li>
+          <li><a href="/jp/ja/businessfields/display/index.html">ディスプレイ</a></li>
+          <li><a href="/jp/ja/businessfields/consumer_goods/index.html">消費財</a></li>
+          <li><a href="/jp/ja/businessfields/packaging/index.html">包装材</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="item-3">
+      <a href="/jp/ja/company/index.html">企業情報</a>
+      <div class="frame">
+        <ul class="list">
+          <li><a href="/jp/ja/company/index.html">企業情報TOP</a></li>
+          <li><a href="/jp/ja/company/profile/grp/index.html">日東電工について</a></li>
+          <li><a href="/jp/ja/company/vision/index.html">理念体系</a></li>
+          <li><a href="/jp/ja/company/message/index.html">社長メッセージ</a></li>
+          <li><a href="/jp/ja/company/brand/index.html">コーポレートブランド</a></li>
+          <li><a href="/jp/ja/company/sustainability/index.html">サステナビリティ</a></li>
+          <li><a href="/jp/ja/company/materials/index.html">資材調達</a></li>
+          <li><a href="/jp/ja/company/bce/index.html">各国/エリア拠点案内</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="item-4">
+      <a href="/jp/ja/rd/index.html">研究開発</a>
+      <div class="frame">
+        <ul class="list">
+          <li><a href="/jp/ja/rd/index.html">研究開発TOP</a></li>
+          <li><a href="/jp/ja/rd/policy/index.html">R&amp;D戦略・方針</a></li>
+          <li><a href="/jp/ja/rd/base/index.html">基幹技術</a></li>
+          <li><a href="/jp/ja/rd/composite/index.html">技術の複合力</a></li>
+          <li><a href="/jp/ja/rd/develop/index.html">開発ストーリー</a></li>
+          <li><a href="/jp/ja/rd/award/index.html">社外表彰</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="item-5">
+      <a href="/jp/ja/ir/index.html">株主・投資家情報</a>
+      <div class="frame">
+        <ul class="list">
+          <li><a href="/jp/ja/ir/index.html">株主・投資家情報TOP</a></li>
+          <li><a href="/jp/ja/ir/individual/index.html">個人投資家の皆様へ</a></li>
+          <li><a href="/jp/ja/ir/management/index.html">経営方針</a></li>
+          <li><a href="/jp/ja/ir/finance/index.html">業績データ</a></li>
+          <li><a href="/jp/ja/ir/library/index.html">IRライブラリ</a></li>
+          <li><a href="/jp/ja/ir/calender/index.html">IRカレンダー</a></li>
+          <li><a href="/jp/ja/ir/stock/index.html">株式・配当金・格付情報</a></li>
+          <li><a href="/jp/ja/ir/shareholdersmeeting/index.html">株主総会</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="item-6">
+      <a href="/jp/ja/employment/index.html">採用情報</a>
+      <div class="frame">
+        <ul class="list">
+          <li><a href="/jp/ja/employment/index.html">採用情報TOP</a></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+  <!-- /Global Menu -->
+</div>
+<!-- /Header -->
+      <!-- Topic Path -->
+      <ul id="G-TOPIC-PATH">
+        <li><a href="">HOME</a></li>
+        <li><a href="">事業領域</a></li>
+        <li></li>
+      </ul>
+      <!-- /Topic Path -->
+      
+      
+      <!-- Print Button Area -->
+      <ul id="G-PRINT-AREA">
+        <li class="printer"><a href="">印刷</a></li>
+      </ul>
+      <!-- /Print Button Area -->
+    </div>
+    <!-- Main Area -->
+    <div id="G-MAIN-AREA">
+      <div class="m-layout">
+        <div class="g-clearfix">
+          <!-- Right Pane -->
+          <div id="G-RIGHT-PANE">
+            <!-- Content Body -->
+            <div>
+				<!-- Headline -->
+				<h1 class="m-h1"><span><span><span></span></span></span></h1>
+				<!-- /Headline -->
+
+				<p class="m-x-large lh165 g-mt30"></p>
+
+				<div class="m-shadow g-mt30">
+					<img src="/jp/ja/common/img/businessfields/packaging/banner.jpg" width="690" height="150" alt=""/>
+				</div>
+				
+				<ul class="g-mt35 g-mb40 g-mrm15">
+					[[module01]]
+				</ul>
+
+				<!-- H2 -->
+				<h2 class="m-h2"><span></span></h2>
+				<!-- /H2 -->
+
+				<!-- Matrix -->
+				<div class="m-matrix">
+					<div class="m-matrix-top"></div>
+					<ul class="m-matrix-body">
+						[[module02]]
+					</ul>
+				</div>
+				<!-- /Matrix -->
+			  
+            </div>
+            <!-- /Content Body -->
+          </div>
+          <!-- /Right Pane -->
+          <!-- Left Pane -->
+          <div id="G-LEFT-PANE">
+            <!-- Left Menu -->
+            <ul id="G-LEFT-MENU">
+              <li>
+                <div><a href="/jp/ja/company/index.html">企業情報</a></div>
+                <ul class="third">
+                  <li>
+                    <div><a href="/jp/ja/company/profile/grp/index.html">日東電工について</a></div>
+                    <ul class="fourth">
+                      <li>
+                        <div><a href="/jp/ja/company/profile/grp/outline/index.html">会社概要</a></div>
+                      </li>
+                      <li>
+                        <div><a href="/jp/ja/company/profile/grp/history/index.html">沿革</a></div>
+                      </li>
+                      <li>
+                        <div><a href="/jp/ja/company/profile/grp/board/index.html">役員一覧</a></div>
+                      </li>
+                      <li>
+                        <div><a href="/jp/ja/company/profile/grp/org/index.html">組織図</a></div>
+                      </li>
+                      <li>
+                        <div><a href="/jp/ja/company/profile/grp/results/index.html">業績概要</a></div>
+                      </li>
+                      <li>
+                        <div><a href="/jp/ja/company/profile/grp/group/index.html">グループ会社紹介(日本)</a></div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div><a href="/jp/ja/company/vision/index.html">理念体系</a></div>
+                  </li>
+                  <li>
+                    <div><a href="/jp/ja/company/message/index.html">社長メッセージ</a></div>
+                  </li>
+                  <li>
+                    <div><a href="/jp/ja/company/brand/index.html">コーポレートブランド</a></div>
+                    <ul class="fourth">
+                      <li>
+                        <div><a href="/jp/ja/company/brand/logo/index.html">ロゴマーク</a></div>
+                      </li>
+                      <li>
+                        <div><a href="/jp/ja/company/brand/brandstatement/index.html">ブランドステートメントについて</a></div>
+                      </li>
+                      <li>
+                        <div><a href="/jp/ja/company/brand/sponsorship/index.html">協賛活動</a></div>
+                      </li>
+                      <li>
+                        <div><a href="/jp/ja/company/brand/ad/index.html">映像・広告・CM</a></div>
+                        <ul class="fifth">
+                          <li>
+                            <div><a href="/jp/ja/company/brand/ad/movie/index.html">映像集</a></div>
+                            <ul class="sixth">
+                              <li>
+                                <div><a href="/jp/ja/company/brand/ad/movie/2012marathon/index.html">2012年マラソンCM</a></div>
+                              </li>
+                              <li>
+                                <div><a href="/jp/ja/company/brand/ad/movie/2011marathon/index.html">2011年マラソンCM</a></div>
+                              </li>
+                              <li>
+                                <div><a href="/jp/ja/company/brand/ad/movie/2010marathon/index.html">2010年マラソンCM</a></div>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <div><a href="/jp/ja/company/brand/ad/advertisement/index.html">広告集</a></div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div><a href="/jp/ja/company/sustainability/index.html">サステナビリティ</a></div>
+                    <ul class="fourth">
+                      <li>
+                        <div><a href="/jp/ja/company/sustainability/governance/index.html">ガバナンス</a></div>
+                        <ul class="fifth">
+                          <li>
+                            <div><a href="/jp/ja/company/sustainability/governance/policy/index.html">方針</a></div>
+                          </li>
+                          <li>
+                            <div><a href="/jp/ja/company/sustainability/governance/system/index.html">体制</a></div>
+                          </li>
+                          <li>
+                            <div><a href="/jp/ja/company/sustainability/governance/control/index.html">監査および内部統制</a></div>
+                          </li>
+                          <li>
+                            <div><a href="/jp/ja/company/sustainability/governance/guideline/index.html">ビジネス行動ガイドライン</a></div>
+                          </li>
+                          <li>
+                            <div><a href="/jp/ja/company/sustainability/governance/management/index.html">リスクマネジメント</a></div>
+                            <ul class="sixth">
+                              <li>
+                                <div><a href="/jp/ja/company/sustainability/governance/management/support/index.html">緊急事態支援体制</a></div>
+                              </li>
+                              <li>
+                                <div><a href="/jp/ja/company/sustainability/governance/management/bcm/index.html">BCM</a></div>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <div><a href="/jp/ja/company/sustainability/governance/quality/index.html">品質</a></div>
+                            <ul class="sixth">
+                              <li>
+                                <div><a href="/jp/ja/company/sustainability/governance/quality/policy/index.html">方針</a></div>
+                              </li>
+                              <li>
+                                <div><a href="/jp/ja/company/sustainability/governance/quality/detail/index.html">活動詳細</a></div>
+                              </li>
+                              <li>
+                                <div><a href="/jp/ja/company/sustainability/governance/quality/risk/index.html">品質リスクマネジメント</a></div>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <div><a href="/jp/ja/company/sustainability/environment/index.html">環境への取り組み</a></div>
+                        <ul class="fifth">
+                          <li>
+                            <div><a href="/jp/ja/company/sustainability/environment/policy/index.html">方針</a></div>
+                          </li>
+                          <li>
+                            <div><a href="/jp/ja/company/sustainability/environment/products/index.html">サスティナブルプロダクツ</a></div>
+                          </li>
+                          <li>
+                            <div><a href="/jp/ja/company/sustainability/environment/symbiosis/index.html">地球との共生</a></div>
+                            <ul class="sixth">
+                              <li>
+                                <div><a href="/jp/ja/company/sustainability/environment/symbiosis/action/index.html">地域環境保全の取り組み</a></div>
+                              </li>
+                              <li>
+                                <div><a href="/jp/ja/company/sustainability/environment/symbiosis/area_action/index.html">地域環境保全の取り組み（日本）</a></div>
+                              </li>
+                              <li>
+                                <div><a href="/jp/ja/company/sustainability/environment/symbiosis/unep/index.html">グローバルでの取り組み</a></div>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <div><a href="/jp/ja/company/sustainability/governance/chemical/index.html">化学物質管理</a></div>
+                            <ul class="sixth">
+                              <li>
+                                <div><a href="/jp/ja/company/sustainability/governance/chemical/policy/index.html">方針</a></div>
+                              </li>
+                              <li>
+                                <div><a href="/jp/ja/company/sustainability/governance/chemical/detail/index.html">活動詳細</a></div>
+                              </li>
+                              <li>
+                                <div><a href="/jp/ja/company/sustainability/governance/chemical/risk/index.html">化学物質リスクマネジメント</a></div>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <div><a href="/jp/ja/company/sustainability/environment/biodiversity/index.html">生物多様性</a></div>
+                          </li>
+                          <li>
+                            <div><a href="/jp/ja/company/sustainability/environment/data/index.html">環境データ</a></div>
+                          </li>
+                          <li>
+                            <div><a href="/jp/ja/company/sustainability/environment/disclosure/index.html">法令による開示情報</a></div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <div><a href="/jp/ja/company/sustainability/social/index.html">社会との関わり</a></div>
+                        <ul class="fifth">
+                          <li>
+                            <div><a href="/jp/ja/company/sustainability/social/human/index.html">人権</a></div>
+                          </li>
+                          <li>
+                            <div><a href="/jp/ja/company/sustainability/social/safety/index.html">安心・安全</a></div>
+                            <ul class="sixth">
+                              <li>
+                                <div><a href="/jp/ja/company/sustainability/social/safety/car/index.html">従業員の安全－危険体感</a></div>
+                              </li>
+                              <li>
+                                <div><a href="/jp/ja/company/sustainability/social/policy/index.html">労働安全衛生方針</a></div>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <div><a href="/jp/ja/company/sustainability/social/contribution/index.html">社会貢献</a></div>
+                            <ul class="sixth">
+                              <li>
+                                <div><a href="/jp/ja/company/sustainability/social/contribution/local/index.html">地域貢献活動</a></div>
+                              </li>
+                              <li>
+                                <div><a href="/jp/ja/company/sustainability/social/contribution/education/index.html">教育振興・国際交流</a></div>
+                              </li>
+                              <li>
+                                <div><a href="/jp/ja/company/sustainability/social/contribution/sport/index.html">スポーツ支援活動</a></div>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <div><a href="/jp/ja/company/sustainability/report/index.html">CSR&amp;アニュアルレポート</a></div>
+                        <ul class="fifth">
+                          <li>
+                            <div><a href="/jp/ja/company/sustainability/report/2012/index.html">CSR&amp;アニュアルレポート2012</a></div>
+                            <ul class="sixth">
+                              <li>
+                                <div><a href="/jp/ja/company/sustainability/report/2012/gri/index.html">CSR&amp;アニュアルレポート - GRIガイドライン対照表</a></div>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <div><a href="/jp/ja/company/sustainability/report/2011/index.html">CSR&amp;アニュアルレポート2011</a></div>
+                            <ul class="sixth">
+                              <li>
+                                <div><a href="/jp/ja/company/sustainability/report/2011/gri/index.html">CSR&amp;アニュアルレポート - GRIガイドライン対照表</a></div>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <div><a href="/jp/ja/company/sustainability/report/2010/index.html">CSR&amp;アニュアルレポート2010</a></div>
+                            <ul class="sixth">
+                              <li>
+                                <div><a href="/jp/ja/company/sustainability/report/2010/html/index.html">CSR&amp;アニュアルレポート2010HTML版</a></div>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <div><a href="/jp/ja/company/sustainability/report/2009/index.html">CSR&amp;アニュアルレポート2009</a></div>
+                          </li>
+                          <li>
+                            <div><a href="/jp/ja/company/sustainability/report/2008/index.html">CSR&amp;アニュアルレポート2008</a></div>
+                          </li>
+                          <li>
+                            <div><a href="/jp/ja/company/sustainability/report/2007/index.html">CSR&amp;アニュアルレポート2007</a></div>
+                          </li>
+                          <li>
+                            <div><a href="/jp/ja/company/sustainability/report/2006/index.html">CSR報告書 2006</a></div>
+                          </li>
+                          <li>
+                            <div><a href="/jp/ja/company/sustainability/report/2005/index.html">CSR報告書 2005</a></div>
+                          </li>
+                          <li>
+                            <div><a href="/jp/ja/company/sustainability/report/2004/index.html">環境・社会報告書 2004</a></div>
+                          </li>
+                          <li>
+                            <div><a href="/jp/ja/company/sustainability/report/2003/index.html">環境報告書 2003</a></div>
+                          </li>
+                          <li>
+                            <div><a href="/jp/ja/company/sustainability/report/2002/index.html">環境報告書 2002</a></div>
+                          </li>
+                          <li>
+                            <div><a href="/jp/ja/company/sustainability/report/2001/index.html">環境報告書 2001</a></div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <div><a href="/jp/ja/company/sustainability/certificate/index.html">外部評価・認証取得状況</a></div>
+                        <ul class="fifth">
+                          <li>
+                            <div><a href="/jp/ja/company/sustainability/certificate/djsi/index.html">DJSI</a></div>
+                          </li>
+                          <li>
+                            <div><a href="/jp/ja/company/sustainability/certificate/iso/index.html">認証一覧（品質認証、OHSAS・OHSMS、環境ISO認証</a></div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div><a href="/jp/ja/company/materials/index.html">資材調達</a></div>
+                    <ul class="fourth">
+                      <li>
+                        <div><a href="/jp/ja/company/materials/mention/index.html">検討プロセスでの特記事項</a></div>
+                      </li>
+                      <li>
+                        <div><a href="/jp/ja/company/materials/checklist/index.html">グリーン調達チェックリスト</a></div>
+                      </li>
+                      <li>
+                        <div><a href="/jp/ja/company/materials/new/index.html">取引までのステップ</a></div>
+                      </li>
+                      <li>
+                        <div><a href="/jp/ja/company/materials/demand/index.html">求めている資材</a></div>
+                      </li>
+                      <li>
+                        <div><a href="/jp/ja/company/materials/procurement2/index.html">行動指針</a></div>
+                      </li>
+                      <li>
+                        <div><a href="/jp/ja/company/materials/partnerselection/index.html">パートナー選定方針</a></div>
+                      </li>
+                      <li>
+                        <div><a href="/jp/ja/company/materials/procurement1/index.html">CSRに基づく調達方針</a></div>
+                      </li>
+                      <li>
+                        <div><a href="/jp/ja/company/materials/partner_hotline/index.html">パートナー・ホットライン</a></div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div><a href="/jp/ja/company/bce/index.html">各国/エリア拠点案内</a></div>
+                    <ul class="fourth">
+                      <li>
+                        <div><a href="/jp/ja/company/bce/japan/index.html">JAPAN</a></div>
+                      </li>
+                      <li>
+                        <div><a href="/jp/ja/company/bce/americans/index.html">AMERICAS</a></div>
+                      </li>
+                      <li>
+                        <div><a href="/jp/ja/company/bce/europe/index.html">EUROPE</a></div>
+                      </li>
+                      <li>
+                        <div><a href="/jp/ja/company/bce/eastasia/index.html">EAST ASIA</a></div>
+                      </li>
+                      <li>
+                        <div><a href="/jp/ja/company/bce/southeastasia/index.html">SOUTHEAST ASIA</a></div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <!-- /Left Menu -->
+            
+            
+            <!-- Banner Area -->
+            <div class="m-banner-box">
+              <ul class="m-hover">
+                <li><a href=""><img alt="" height="60" src="/common/img/dummy.gif" width="195" /></a></li>
+                <li><a href=""><img alt="" height="60" src="/common/img/dummy.gif" width="195" /></a></li>
+                <li><a href=""><img alt="" height="60" src="/common/img/dummy.gif" width="195" /></a></li>
+              </ul>
+            </div>
+            <!-- /Banner Area -->
+          </div>
+          <!-- /Left Pane -->
+        </div>
+      </div>
+    </div>
+    <!-- /Main Area -->
+    <!-- Footer -->
+<div id="G-FOOTER">
+  <div class="service">
+    <div class="m-layout inner">
+      <ul>
+        <li class="item-1">
+          <a href="/jp/ja/product/index.html">製品情報</a>
+          <ul>
+            <li><a href="/jp/ja/product/industry/index.html">業界から探す</a></li>
+            <li><a href="/jp/ja/product/spec/index.html">仕様から探す</a></li>
+            <li><a href="/jp/ja/product/function/index.html">機能から探す</a></li>
+            <li><a href="/jp/ja/product/datasheet/index.html">種類から探す</a></li>
+          </ul>
+        </li>
+        <li class="item-2">
+          <a href="/jp/ja/businessfields/index.html">事業領域</a>
+          <ul>
+            <li><a href="/jp/ja/businessfields/automotives/index.html">輸送機器</a></li>
+            <li><a href="/jp/ja/businessfields/house/index.html">住宅</a></li>
+            <li><a href="/jp/ja/businessfields/home_appliance/index.html">家電</a></li>
+            <li><a href="/jp/ja/businessfields/medical/index.html">医療</a></li>
+            <li><a href="/jp/ja/businessfields/electronics/index.html">電子デバイス</a></li>
+            <li><a href="/jp/ja/businessfields/material/index.html">素材</a></li>
+            <li><a href="/jp/ja/businessfields/infrastructure/index.html">社会インフラ</a></li>
+            <li><a href="/jp/ja/businessfields/display/index.html">ディスプレイ</a></li>
+            <li><a href="/jp/ja/businessfields/consumer_goods/index.html">消費財</a></li>
+            <li><a href="/jp/ja/businessfields/packaging/index.html">包装材</a></li>
+          </ul>
+        </li>
+        <li class="item-3">
+          <a href="/jp/ja/company/index.html">企業情報</a>
+          <ul>
+            <li><a href="/jp/ja/company/profile/grp/index.html">日東電工について</a></li>
+            <li><a href="/jp/ja/company/vision/index.html">理念体系</a></li>
+            <li><a href="/jp/ja/company/message/index.html">社長メッセージ</a></li>
+            <li><a href="/jp/ja/company/brand/index.html">コーポレートブランド</a></li>
+            <li><a href="/jp/ja/company/sustainability/index.html">サステナビリティ</a></li>
+            <li><a href="/jp/ja/company/materials/index.html">資材調達</a></li>
+            <li><a href="/jp/ja/company/bce/index.html">各国/エリア拠点案内</a></li>
+          </ul>
+        </li>
+        <li class="item-4">
+          <a href="/jp/ja/rd/index.html">研究開発</a>
+          <ul>
+            <li><a href="/jp/ja/rd/policy/index.html">R&amp;D戦略・方針</a></li>
+            <li><a href="/jp/ja/rd/base/index.html">基幹技術</a></li>
+            <li><a href="/jp/ja/rd/composite/index.html">技術の複合力</a></li>
+            <li><a href="/jp/ja/rd/develop/index.html">開発ストーリー</a></li>
+            <li><a href="/jp/ja/rd/award/index.html">社外表彰</a></li>
+          </ul>
+        </li>
+        <li class="item-5">
+          <a href="/jp/ja/ir/index.html">株主・投資家情報</a>
+          <ul>
+            <li><a href="/jp/ja/ir/individual/index.html">個人投資家の皆様へ</a></li>
+            <li><a href="/jp/ja/ir/management/index.html">経営方針</a></li>
+            <li><a href="/jp/ja/ir/finance/index.html">業績データ</a></li>
+            <li><a href="/jp/ja/ir/library/index.html">IRライブラリ</a></li>
+            <li><a href="/jp/ja/ir/calender/index.html">IRカレンダー</a></li>
+            <li><a href="/jp/ja/ir/stock/index.html">株式・配当金・格付情報</a></li>
+            <li><a href="/jp/ja/ir/shareholdersmeeting/index.html">株主総会</a></li>
+          </ul>
+        </li>
+        <li class="item-6">
+          <span>その他</span>
+          <ul>
+            <li><a href="/jp/ja/employment/index.html">採用情報</a></li>
+            <li><a href="/jp/ja/press/index.html">ニュースリリース</a></li>
+            <li><a href="/jp/ja/topics/index.html">新着情報</a></li>
+            <li><a href="/jp/ja/contact/index.html">お問い合わせ</a></li>
+            <li><a href="/jp/ja/faq/index.html">FAQ</a></li>
+            <li><a href="/jp/ja/tapemuseum/index.html">テープミュージアム</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="site">
+    <div class="m-layout inner">
+      <ul>
+        <li><a href="/jp/ja/sitemap/index.html">サイトマップ</a></li>
+        <li><a href="/jp/ja/legal/index.html">サイトポリシー</a></li>
+        <li><a href="/jp/ja/privacy/index.html">個人情報保護ポリシー</a></li>
+      </ul>
+      <p>&copy;NITTO DENKO CORPORATION. 2013 All rights reserved.</p>
+    </div>
+  </div>
+</div>
+<!-- /Footer -->
+
+
+<!-- Pagetop -->
+<p id="G-PAGETOP"><a href="#G-HEADER">ページトップへ戻る</a></p>
+<!-- /Pagetop -->
+
+
+<!-- GA -->
+<!-- Put google-analytics code here. -->
+<!-- /GA -->
+  </body>
+</html>

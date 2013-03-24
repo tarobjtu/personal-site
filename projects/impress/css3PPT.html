@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Impressive CSS3 Product Showcase | Tutorialzine Demo</title>
+        
+        <!-- Google Webfonts and our stylesheet -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow|Open+Sans:300" />
+        <link rel="stylesheet" href="assets/css/styles.css" />
+        <link rel="stylesheet" href="../css/common.css" />
+        
+        <!--[if lt IE 9]>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    
+    <body>
+		<div class="head">
+			<h1><img src="assets/img/head.png" alt="CSS3紹介"/></h1>
+		</div>
+		<div id="impress" class="impress-not-supported">
+			<div id="front" class="step" data-x="0" data-y="0">
+		        <h2>CSS3紹介 </h2>
+		        <p>チータオ</p>
+		        <img src="assets/img/css3.png" alt="CSS3" />
+		    </div>
+			
+		    <div id="transation" class="step" data-x="1100" data-y="1200" data-scale="1.8" data-rotate="190">
+				<h2>CSS3 Transation</h2>
+				<p>Javascriptを使わず、CSS3のみで上記の動画サンプルを実現できます。<br><br>
+					CSS3 Transationデモ：<br>
+					<span>デモ１： <a target="_blank" href="http://leaverou.github.com/animatable/">アニメーションDIV</a></span><br>
+					<span>デモ2： <a target="_blank" href="http://media.24ways.org/2009/14/3/index.html">写真について</a></span>
+				</p>
+		        <div class="exampletransitionc">
+					<div class="minustwo">-2s delay</div>
+					<div class="no">no delay</div>
+					<div class="one">1s delay</div>
+					<div class="two">2s delay</div>
+					<div class="three">3s delay</div>
+					<div class="five">5s delay</div>
+				</div>
+		    </div>
+		    
+		    <div id="transform" class="step" data-x="-300" data-y="600" data-scale="0.2" data-rotate="270">
+		        <h2>CSS3 Transform</h2>
+		        <p>CSS3 Transformで画像の回転やズーム等効果の実現が可能です。<br><br>
+				CSS3 Transformデモ：<br>
+				デモ１： <a target="_blank" href="http://www.zurb.com/playground/osx-dock">Recreating the OS X Dock</a> <br>
+				デモ2： <a target="_blank" href="http://www.zurb.com/playground/css3-polaroids">Transform Scale</a> <br>
+				デモ3： <a target="_blank" href="http://www.eleqtriq.com/2010/05/understanding-css-3d-transforms/">Butterfly</a>
+				</p>
+		        <div class="exampletransitione">
+					<img class="transition" src="assets/img/css3.png" alt="CSS3"/>
+				</div>
+		    </div>
+			
+			<div id="animation" class="step" data-x="-200" data-y="1500" data-rotate="180">
+		        <h2>CSS3 Animation</h2>
+		        <p>
+					CSS3でインタラクション効果の開発が便利になります。<br>
+					今からHTML5とCSS3を勉強しています。色々問題がありますからご指導よろしくお願いいたします。
+				</p>
+		        <div id="animated_div">
+					CSS3<br>
+					<span style="font-size:10px">Animation</span>	
+				</div>
+				<button id="animation-button" class="run">run</button>
+		    </div>
+		    
+		    <div id="end" class="step" data-x="-1200" data-y="1000" data-scale="0.8" data-rotate="270">
+		        <h2>以上です。</h2>
+		        <p>ご清聴ありがとうございます！</p>
+		        <img src="assets/img/Bye.png"  alt="Good Bye" />
+		    </div>
+		    
+		</div>
+		
+		<a id="arrowLeft" class="arrow">&lt;</a>
+		<a id="arrowRight" class="arrow">&gt;</a>
+		
+		<!-- Browser support information -->
+		<div class="browser-notice" class="clearfix">
+			<p>CSS3幻灯片的浏览器支持情况：</p>
+			<ul class="clearfix">
+				<li>
+					<a href="https://www.google.com/intl/en/chrome/browser/" target="_blank">
+						<img src="../img/browser/chrome.png" alt="Support Chrome" />
+					</a>
+				</li>
+				<li>
+					<a href="http://www.apple.com/safari/" target="_blank">
+						<img src="../img/browser/safari.png" alt="Support Safari" />
+					</a>
+				</li>
+				<li>
+					<a href="http://www.mozilla.org/en-US/firefox/new/" target="_blank">
+						<img src="../img/browser/firefox.png" alt="Support Firefox " />
+					</a>
+				</li>
+				<li>
+					<img src="../img/browser/xie.png" alt="Not support Internet Explore " />
+				</li>
+				<li>
+					<img src="../img/browser/xopera.png" alt="Not support Opera " />
+				</li>
+			</ul>
+			<div class="close"><img src="../img/close-icon.png" alt="Close" width="40px" height="40px" /></div>
+		</div>
+
+        <!-- JavaScript includes -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script type="text/javascript" src="assets/js/impress.js"></script> 
+		<script type="text/javascript" src="assets/js/script.js"></script>
+
+    </body>
+</html>
+

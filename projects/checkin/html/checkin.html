@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale = 1, maximum-scale = 1, user-scalable = no">
+		<meta property="fb:app_id" content="260874077337184" /> 
+		<meta property="og:type" content="tarobjtu.com" /> 
+		<meta property="og:title" content="Facebook App" /> 
+		<meta property="og:image" content="http://www.tarobjtu.com/img/logo.jpg" /> 
+		<meta property="og:description" content="Check-ins" /> 
+		<meta property="og:url" content="http://www.tarobjtu.com/"> 
+		<title>チェックイン</title>
+		<link rel="stylesheet" href="css/checkin.css"/>
+		<script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/checkin.js"></script>
+	</head>
+	<body>
+		<div id="fb-root"></div>
+		<script>
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=260874077337184";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+		
+		<div class="wrapper">
+			<!-- login -->
+			<div class="login">
+				<h2><img src="img/btn.png" width="20" />Login（ログイン）</h2>
+				<fb:login-button show-faces="false" autologoutlink="true" size="medium" max-rows="1" scope="user_checkins, user_status, publish_checkins" onlogin='window.location.reload()'></fb:login-button>
+				<fb:login-button show-faces="true" autologoutlink="true" size="medium" max-rows="1" scope="user_checkins, user_status, publish_checkins" onlogin='window.location.reload()'></fb:login-button>
+				<div class="user-info"></div>
+			</div>
+			
+			<!-- checkins -->
+			<div class="checkins">
+				<h2><img src="img/btn.png" width="20" />Check In（スポット）</h2>
+				<div class="clearfix">
+					<div class="left">
+						<a href="#" class="check-in"><img src="img/checkin.jpg" alt="check in" width="150" /></a>
+					</div>
+					<div class="right">
+					</div>
+				</div>
+				<div class="checkin-result"></div>
+			</div>
+		</div>
+	</body>
+</html>

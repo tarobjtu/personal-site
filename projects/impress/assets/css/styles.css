@@ -1,0 +1,398 @@
+/*-------------------------
+	Simple reset
+--------------------------*/
+
+
+*{
+	margin:0;
+	padding:0;
+}
+
+
+/*-------------------------
+	General Styles
+--------------------------*/
+
+
+html{
+	background:url('../img/bg.jpg') #fff;
+}
+
+body{
+	min-height: 600px;
+    padding: 100px 0 50px;
+	font:14px/1.3 'Segoe UI',Arial, sans-serif;
+	box-shadow:0 0 25px rgba(0,0,0,0.3) inset;
+	height:100%;
+}
+
+a, a:visited {
+	text-decoration:none;
+	outline:none;
+	color:#54a6de;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+section, footer{
+	display: block;
+}
+
+.head{
+	padding:50px 0;
+}
+
+/*----------------------------
+	Styling the presentation
+-----------------------------*/
+
+#impress:not(.impress-not-supported) .step{
+	opacity:0.2;
+}
+
+#impress .step{
+	width:720px;
+	height: 580px;
+	position:relative;
+	margin:0 auto;
+	border:2px solid #e3e3e3;
+    -webkit-box-shadow: inset 0px 0px 25px 0px #ababab;
+    box-shadow: inset 0px 0px 25px 0px #ababab;
+	border-radius:15px;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	-moz-transition:1s opacity;
+	-webkit-transition:1s opacity;
+	transition:1s opacity;
+	background: rgb(247,251,255); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(247,251,255,1) 0%, rgba(221,242,255,1) 47%, rgba(196,233,255,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(247,251,255,1)), color-stop(47%,rgba(221,242,255,1)), color-stop(100%,rgba(196,233,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(247,251,255,1) 0%,rgba(221,242,255,1) 47%,rgba(196,233,255,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(247,251,255,1) 0%,rgba(221,242,255,1) 47%,rgba(196,233,255,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(247,251,255,1) 0%,rgba(221,242,255,1) 47%,rgba(196,233,255,1) 100%); /* IE10+ */
+	background: linear-gradient(top,  rgba(247,251,255,1) 0%,rgba(221,242,255,1) 47%,rgba(196,233,255,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7fbff', endColorstr='#c4e9ff',GradientType=0 ); /* IE6-9 */
+
+}
+
+#impress .step.active{
+	opacity:1;
+}
+
+#impress h2{
+	font: normal 44px/1.5 'PT Sans Narrow', sans-serif;
+	color:#444648;
+	top: 45px;
+	font-size: 65px;
+	position:absolute;
+	z-index:10;
+}
+
+#impress p{
+	font: normal 22px/1.3 'Open Sans', sans-serif;
+	color:#27333f;
+	position:absolute;
+	z-index:10;
+	width:620px;
+}
+#impress button{
+	font: normal 18px/1.3 'Open Sans', sans-serif;
+	color:#27333f;
+	position:absolute;
+	z-index:10;
+	padding:6px 20px;
+	border-radius:5px;
+	font-weight:bold;
+	cursor:pointer;
+}
+#impress img{
+	position:absolute;
+	z-index:1;
+}
+
+.arrow{
+	width:32px;
+	height:54px;
+	background:url('../img/arrows.png') no-repeat;
+	position:fixed;
+	top:50%;
+	margin-top:-27px;
+	cursor:pointer;
+	text-indent:-9999px;
+	overflow:hidden;
+	opacity:0.8;
+	border:none !important;
+	text-decoration:none !important;
+	
+	-moz-transition:0.2s opacity;
+	-webkit-transition:0.2s opacity;
+	transition:0.2s opacity;
+}
+.arrow:hover{
+	opacity:1;
+}
+#arrowLeft{
+	left:45px;
+}
+#arrowRight{
+	right:45px;
+	background-position:top right;
+}
+/* Hide the arrows if impress is not supported */
+
+#impress.impress-not-supported + .arrow,
+#impress.impress-not-supported + .arrow + .arrow{
+	display:none;
+}
+
+/*----------------------------
+	Slide 0 - Start
+-----------------------------*/
+#impress #front{
+}
+
+#front h2{
+	top: 85px;
+	left: 155px;
+	font-size: 65px;
+	width: 400px;
+}
+
+#front p{
+	left: 460px;
+	text-align: justify;
+	text-indent: 16px;
+	top:205px;
+	width: 365px;
+	font-size: 30px;
+}
+
+#front img{
+	left: 265px;
+	top: 280px;
+}
+
+/*----------------------------
+	Slide 1 - animation
+-----------------------------*/
+#animation h2{
+	text-align: center;
+    width: 100%;
+}
+
+#animation p{
+	font-size: 22px;
+    line-height: 1.6;
+    top: 320px;
+	left: 50px;
+}
+
+#animation img{
+	top: 170px;
+}
+
+#animation-button{
+	top: 250px;
+	left:600px;
+}
+
+.animated_div_run{
+	animation:animated_div 5s 1;
+	-moz-animation:animated_div 5s 1;
+	-webkit-animation:animated_div 5s 1;
+}
+#animated_div{
+	position:absolute;
+	z-index:1;
+	top: 150px;
+	left:50px;
+	width:70px;
+	height:60px;
+	background:#92B901;
+	color:#ffffff;
+	font-weight:bold;
+	font-size:25px;
+	padding:15px 25px;
+	border-radius:8px;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+}
+
+@keyframes animated_div
+{
+	0%		{transform: rotate(0deg);left:0px;}
+	25%		{transform: rotate(20deg);left:0px;}
+	50%		{transform: rotate(0deg);left:500px;}
+	55%		{transform: rotate(0deg);left:500px;}
+	70%		{transform: rotate(0deg);left:500px;background:#1ec7e6;}
+	100%	{transform: rotate(-360deg);left:0px;}
+}
+
+@-webkit-keyframes animated_div
+{
+	0%		{-webkit-transform: rotate(0deg);left:0px;}
+	25%		{-webkit-transform: rotate(20deg);left:0px;}
+	50%		{-webkit-transform: rotate(0deg);left:500px;}
+	55%		{-webkit-transform: rotate(0deg);left:500px;}
+	70%		{-webkit-transform: rotate(0deg);left:500px;background:#1ec7e6;}
+	100%	{-webkit-transform: rotate(-360deg);left:0px;}
+}
+
+@-moz-keyframes animated_div
+{
+	0%   {-moz-transform: rotate(0deg);left:0px;}
+	25%  {-moz-transform: rotate(20deg);left:0px;}
+	50%  {-moz-transform: rotate(0deg);left:500px;}
+	55%  {-moz-transform: rotate(0deg);left:500px;}
+	70%  {-moz-transform: rotate(0deg);left:500px;background:#1ec7e6;}
+	100% {-moz-transform: rotate(-360deg);left:0px;}
+}
+
+/*----------------------------
+	Slide 2 - transation
+-----------------------------*/
+#transation h2{
+	left: 200px;
+}
+#transation p{
+	left: 50px;
+    text-align: justify;
+    text-indent: 16px;
+    top: 395px;
+}
+#transation img{
+	right: 0;
+    top: 30px;
+}
+#transation span{
+	margin-left:100px;
+	margin-top:15px;
+}
+div.exampletransitionc {
+	width: 520px;
+	position:absolute;
+	top: 160px;
+	left: 75px;;
+}
+div.exampletransitionc div {
+	width: 100px;
+	margin: 5px 0;
+	padding: 5px;
+	color: white;
+	background-color: #ED8029;
+	text-align: right;
+	border-radius: 5px;
+}
+div.exampletransitionc:hover div {
+	width: 500px;
+}
+div.exampletransitionc div.no {
+	-webkit-transition: 3s linear;
+	-moz-transition: 3s linear;
+	-o-transition: 3s linear;
+	-ms-transition: 3s linear;
+	transition: 3s linear;
+}
+div.exampletransitionc div.one {
+	-webkit-transition: 3s linear 1s;
+	-moz-transition: 3s linear 1s;
+	-o-transition: 3s linear 1s;
+	-ms-transition: 3s linear 1s;
+	transition: 3s linear 1s;
+}
+div.exampletransitionc div.two {
+	-webkit-transition: 3s linear 2s;
+	-moz-transition: 3s linear 2s;
+	-o-transition: 3s linear 2s;
+	-ms-transition: 3s linear 2s;
+	transition: 3s linear 2s;
+}
+div.exampletransitionc div.three {
+	-webkit-transition: 3s linear 3s;
+	-moz-transition: 3s linear 3s;
+	-o-transition: 3s linear 3s;
+	-ms-transition: 3s linear 3s;
+	transition: 3s linear 3s;
+}
+div.exampletransitionc div.five {
+	-webkit-transition: 3s linear 5s;
+	-moz-transition: 3s linear 5s;
+	-o-transition: 3s linear 5s;
+	-ms-transition: 3s linear 5s;
+	transition: 3s linear 5s;
+}
+div.exampletransitionc div.minustwo {
+	-webkit-transition: 3s linear -2s;
+	-moz-transition: 3s linear -2s;
+	-o-transition: 3s linear -2s;
+	-ms-transition: 3s linear -2s;
+	transition: 3s linear -2s;
+}
+
+
+/*----------------------------
+	Slide 3 - transform
+-----------------------------*/
+#transform h2{
+	top: 40px;
+	width: 100%;
+	text-align:center;
+}
+#transform p{
+    top: 360px;
+	left:50px;
+}
+div.exampletransitione {
+	width: 500px;
+	height: 150px;
+	position:absolute;
+	top:150px;
+	left:50px;
+}
+div.exampletransitione .transition {
+	display:block;
+	width: 100px;
+	height: 100px;
+	border-radius: 5px;
+	opacity: 0.4;
+	-webkit-transition: 3s linear;
+	-moz-transition: 3s linear;
+	-o-transition: 3s linear;
+	-ms-transition: 3s linear;
+	transition: 3s linear;
+}
+div.exampletransitione:hover .transition {
+	width: 200px;
+	height: 200px;
+	margin-left: 400px;
+	opacity: 1;
+	-webkit-transform:rotate(360deg);
+	-moz-transform:rotate(360deg);
+	-o-transform:rotate(360deg);
+	-ms-transform:rotate(360deg);
+	transform:rotate(360deg);
+}
+
+
+/*----------------------------
+	Slide 5 - end
+-----------------------------*/
+#end h2{
+	left: 20px;
+	text-align: center;
+	top: 105px;
+	width: 100%;
+	font-size: 70px;
+}
+#end p{
+	font-size: 40px;
+	left: 85px;
+	text-indent: 15px;
+	top: 250px;
+}
+#end img{
+	right: 100px;
+	top: 270px;
+}

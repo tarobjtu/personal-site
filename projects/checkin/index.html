@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale = 1, maximum-scale = 1, user-scalable = no">
+		<meta property="fb:app_id" content="260874077337184" /> 
+		<meta property="og:type" content="tarobjtu.com" /> 
+		<meta property="og:title" content="Facebook App" /> 
+		<meta property="og:image" content="http://www.tarobjtu.com/img/logo.jpg" /> 
+		<meta property="og:description" content="Check-ins" /> 
+		<meta property="og:url" content="http://www.tarobjtu.com/index.html"> 
+		<link rel="stylesheet" href="css/index.css"/>
+		<script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+		<script type="text/javascript" src="js/gmap3.min.js"></script> 
+		<script type="text/javascript" src="js/index.js"></script>
+		<title>shoplist</title>
+	</head>
+	<body>
+		<div id="fb-root"></div>
+		<script>
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=260874077337184";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+		<div class="wrapper">
+			<!-- title -->
+			<div class="title">
+				<h1><img src="img/head.png" alt="商店情報"/></h1>
+			</div>
+			
+			<!-- login -->
+			<div class="login">
+				<fb:login-button show-faces="false" autologoutlink="true" size="medium" max-rows="1" scope="user_checkins, user_status, publish_checkins, publish_stream" onlogin='window.location.reload()'></fb:login-button>
+			</div>
+			
+			<!-- shop list -->
+			<div class="info">
+				<div class="warning"></div>
+				<ul class="shoplist">
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

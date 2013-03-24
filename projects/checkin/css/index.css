@@ -1,0 +1,199 @@
+/* css reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { 
+	border:0;
+}
+
+body{
+	width:100%;
+	margin:50px auto;
+	font-size:90%;
+	background:#000;
+}
+.warning{
+	color:red;
+	font-weight:bold;
+}
+.check-in-info, .user-info{
+	padding-top:15px;
+	font-size:80%;
+}
+.checkins .left{
+	float:left;
+	width:180px;
+}
+.shop span{
+	padding-right:30px;
+}
+.checkins .right{
+	float:left;
+}
+.gps a{
+	text-align:center;
+	padding-left:15px;
+}
+button{
+	padding:8px 15px;
+	background:#365490;
+	border:1px solid #eeeeee;
+	border-radius:5px;
+	cursor:pointer;
+	color:#FFF;
+	font-weight:bold;
+}
+.friend-list ul{
+	list-style-image:url(/img/friend.png);
+}
+.friend-list li{
+	float:left;
+	width:150px;
+	line-height:120%;
+}
+.checkins ul{
+	list-style-image:url(/img/check_logo.jpg);
+}
+.checkins li{
+	line-height:120%;
+}
+
+.title{
+	text-align:center;
+	padding-bottom:20px;
+}
+
+.shoplist{
+	text-align:left;
+}
+.shop{
+	padding:10px;
+	margin:0px 10px 0px 10px;
+	border-bottom:1px solid rgb(129,204,234);
+	background: rgb(129,204,234); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(129,204,234,1) 0%, rgba(41,184,229,1) 50%, rgba(135,209,237,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(129,204,234,1)), color-stop(50%,rgba(41,184,229,1)), color-stop(100%,rgba(135,209,237,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(129,204,234,1) 0%,rgba(41,184,229,1) 50%,rgba(135,209,237,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(129,204,234,1) 0%,rgba(41,184,229,1) 50%,rgba(135,209,237,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(129,204,234,1) 0%,rgba(41,184,229,1) 50%,rgba(135,209,237,1) 100%); /* IE10+ */
+	background: linear-gradient(top,  rgba(129,204,234,1) 0%,rgba(41,184,229,1) 50%,rgba(135,209,237,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#81ccea', endColorstr='#87d1ed',GradientType=0 ); /* IE6-9 */
+
+}
+.shop:first-child{
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+.shop:last-child{
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+.shop .left{
+	width:70%;
+	float:left;
+}
+.shop .right{
+	padding:10px;
+	float:right;
+}
+.shop p{
+	padding:5px 0;
+}
+.shop span{
+	padding-right:20px;
+}
+.shop a{
+	text-decoration:none;
+}
+.shop .name{
+	font-size:150%;
+	font-weight:bold;
+	color:blue;
+	float:left;
+	margin-right:30px;
+}
+.shop .address{
+	font-size:80%;
+	color:#000;
+}
+.shop .sns{
+	float:left;
+}
+.shop .checkins, .shop .likes{
+	padding:2px;
+	margin-left:5px;
+	border:1px solid #FFF;
+	border-radius:2px;
+}
+.shop .checkins{
+	margin-right:20px;
+}
+.shop .straight-line-distance{
+	
+}
+.shop .traffic-distance{
+	
+}
+.shop .car{
+	margin-right:30px;
+}
+.shop .metro{
+	margin-right:30px;
+}
+.shop .checkin-result{
+	padding:5px 10px;
+}
+
+/* ========================= clearfix =============================== */
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+
+.clearfix:before,
+.clearfix:after{
+content: '.';
+display: block;
+overflow: hidden;
+visibility: hidden;
+font-size: 0;
+line-height: 0;
+width: 0;
+height: 0;
+}
+
+.clearfix:after{
+clear: both;
+}
+
+/*
+The following zoom:1 rule is specifically for IE6 + IE7.
+Move to separate stylesheet if invalid CSS is a problem.
+*/
+
+.clearfix{
+zoom: 1;
+}
+/* ================================================================= */

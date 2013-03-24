@@ -1,0 +1,382 @@
+/* --------------------------------------------------
+	SiteName : 祁有此理
+	FileName : butterfly.css
+	Update : 2012/05/28
+-------------------------------------------------- */
+
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	height:100%;
+	margin:0 auto;
+	min-height:1500px;
+	padding:30px 0px;
+	overflow:hidden;
+	text-align:center;
+	background: rgb(50,153,255); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(50,153,255,1) 0%, rgba(151,198,244,1) 31%, rgba(234,234,234,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(50,153,255,1)), color-stop(31%,rgba(151,198,244,1)), color-stop(100%,rgba(234,234,234,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(50,153,255,1) 0%,rgba(151,198,244,1) 31%,rgba(234,234,234,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(50,153,255,1) 0%,rgba(151,198,244,1) 31%,rgba(234,234,234,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(50,153,255,1) 0%,rgba(151,198,244,1) 31%,rgba(234,234,234,1) 100%); /* IE10+ */
+	background: linear-gradient(top,  rgba(50,153,255,1) 0%,rgba(151,198,244,1) 31%,rgba(234,234,234,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3299ff', endColorstr='#eaeaea',GradientType=0 ); /* IE6-9 */
+
+}
+.header{
+	position:relative;
+	width: 600px;
+	margin:0 auto;
+}
+.header .title{
+	margin:0 auto;
+	padding-top: 20px;
+}
+.header h1{
+	font-size: 5em;
+	color:#ffffff;
+	text-shadow: 5px 5px 5px #807680;
+	filter: dropshadow(color=#807680, offx=5, offy=5);
+	font-family:'Marko One',Arial, sans-serif;
+}
+.header h2{
+	padding-top: 20px;
+	font-size: 2em;
+	color: #311816;
+	text-shadow: 5px 5px 5px #807680;
+	filter: dropshadow(color=#807680, offx=5, offy=5);
+	font-family: 'Limelight', cursive;
+}
+.wrapper{
+        width:960px;
+	margin:0 auto;
+	position:relative;
+	min-height:1px;
+	perspective:800px;
+	perspective:800px;
+	perspective-origin:0% 0%;
+	-webkit-perspective:800px;
+	-webkit-perspective-origin:0% 0%;
+	-moz-perspective:800px;
+	-moz-perspective-origin:0% 0%;
+}
+
+/* --------------------------------------------------
+		Butterfly ICON
+-------------------------------------------------- */
+#butterfly01{
+	position:absolute;
+	top: 85px;
+	right: -65px;
+	transform:scale(0.5, 0.5);
+	-webkit-transform:scale(0.5, 0.5);
+	-moz-transform:scale(0.5, 0.5);
+}
+#left01{
+	transform-origin: 0% 0%;
+	transform-style:preserve-3d;
+	transform: rotateY(180deg);
+	-webkit-transform-origin: 0% 0%;
+	-webkit-transform-style:preserve-3d;
+	-webkit-transform: rotateY(180deg);
+	-moz-transform-origin: 0% 0%;
+	-moz-transform-style:preserve-3d;
+	-moz-transform: rotateY(180deg);
+}
+
+/* --------------------------------------------------
+		Butterfly Animation Style Sheet
+-------------------------------------------------- */
+
+/**************** Turning in circles *****************/
+#around{
+	position:absolute;
+	top: 200px;
+	left: 480px;
+	width: 400px;
+	height:100px;
+	transform-origin:0% 0%;
+	transform-style:preserve-3d;
+	-webkit-transform-origin:0% 0%;
+	-webkit-transform-style:preserve-3d;
+	-moz-transform-origin:0% 0%;
+	-moz-transform-style:preserve-3d;
+	
+	animation-name:around;
+	animation-duration:5s;
+	animation-timing-function:linear;
+	animation-iteration-count:infinite;
+	
+	-webkit-animation-name:around;
+	-webkit-animation-duration:5s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-iteration-count:infinite;
+	
+	-moz-animation-name:around;
+	-moz-animation-duration:5s;
+	-moz-animation-timing-function:linear;
+	-moz-animation-iteration-count:infinite;
+}
+@-webkit-keyframes around {
+	from {
+		transform: rotate3d(0,1,0, 0deg);
+		-webkit-transform: rotate3d(0,1,0, 0deg);
+		-moz-transform: rotate3d(0,1,0, 0deg);
+		-ms-transform: rotate3d(0,1,0, 0deg);
+	}
+	25% {
+		transform: rotate3d(0,1,0, 90deg);
+		-webkit-transform: rotate3d(0,1,0, 90deg);
+		-moz-transform: rotate3d(0,1,0, 90deg);
+		-ms-transform: rotate3d(0,1,0, 90deg);
+	}
+	50% {
+		transform: rotate3d(0,1,0, 180deg);
+		-webkit-transform: rotate3d(0,1,0, 180deg);
+		-moz-transform: rotate3d(0,1,0, 180deg);
+		-ms-transform: rotate3d(0,1,0, 180deg);
+	}
+	75% {
+		transform: rotate3d(0,1,0, 270deg);
+		-webkit-transform: rotate3d(0,1,0, 270deg);
+		-moz-transform: rotate3d(0,1,0, 270deg);
+		-ms-transform: rotate3d(0,1,0, 270deg);
+	}
+	to {
+		transform: rotate3d(0,1,0, 360deg);
+		-webkit-transform: rotate3d(0,1,0, 360deg);
+		-moz-transform: rotate3d(0,1,0, 360deg);
+		-ms-transform: rotate3d(0,1,0, 360deg);
+	}
+}
+
+/**************** Flapping butterfly's wings *****************/
+.fan{
+	position:absolute;
+	width:100px;
+	height:100px;
+}
+#right{
+	top:0px;
+	left:290px;
+	transform-origin: 0% 0%;
+	transform-style: preserve-3d;
+	transform: rotateX(90deg) rotate3d(0,1,0, -125deg);
+	-webkit-transform-origin: 0% 0%;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform: rotateX(90deg) rotate3d(0,1,0, -125deg);
+	-moz-transform-origin: 0% 0%;
+	-moz-transform-style: preserve-3d;
+	-moz-transform: rotateX(90deg) rotate3d(0,1,0, -125deg);
+	
+	animation-name:swingLeft;
+	animation-duration:0.5s;
+	animation-timing-function:linear;
+	animation-iteration-count:infinite;
+	-webkit-animation-name:swingLeft;
+	-webkit-animation-duration:0.5s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-iteration-count:infinite;
+	-moz-animation-name:swingLeft;
+	-moz-animation-duration:0.5s;
+	-moz-animation-timing-function:linear;
+	-moz-animation-iteration-count:infinite;
+}
+@-webkit-keyframes swingLeft {
+	from {
+		transform: rotateX(90deg) rotate3d(0,1,0, -125deg);
+		-webkit-transform: rotateX(90deg)  rotate3d(0,1,0, -125deg);
+		-moz-transform: rotateX(90deg)  rotate3d(0,1,0, -125deg);
+		-ms-transform: rotateX(90deg)  rotate3d(0,1,0, -125deg);
+	}
+	50% {
+		transform: rotateX(90deg) rotate3d(0,1,0, 0deg);
+		-webkit-transform: rotateX(90deg) rotate3d(0,1,0, 0deg);
+		-moz-transform: rotateX(90deg) rotate3d(0,1,0, 0deg);
+		-ms-transform: rotateX(90deg) rotate3d(0,1,0, 0deg);
+	}
+	to {
+		transform: rotateX(90deg)  rotate3d(0,1,0, -125deg);
+		-webkit-transform: rotateX(90deg)  rotate3d(0,1,0, -125deg);
+		-moz-transform: rotateX(90deg)  rotate3d(0,1,0, -125deg);
+		-ms-transform: rotateX(90deg)  rotate3d(0,1,0, -125deg);
+	}
+}
+
+#left{
+	top:0px;
+	left: 292px;
+	z-index:3;
+	
+	transform-origin: 0% 0%;
+	transform-style:preserve-3d;
+	transform: rotateX(90deg) rotate3d(0,1,0, 225deg);
+	-webkit-transform-origin: 0% 0%;
+	-webkit-transform-style:preserve-3d;
+	-webkit-transform: rotateX(90deg) rotate3d(0,1,0, 225deg);
+	-moz-transform-origin: 0% 0%;
+	-moz-transform-style:preserve-3d;
+	-moz-transform: rotateX(90deg) rotate3d(0,1,0, 225deg);
+	
+	animation-name:swingRight;
+	animation-duration:0.5s;
+	animation-timing-function:linear;
+	animation-iteration-count:infinite;
+	-webkit-animation-name:swingRight;
+	-webkit-animation-duration:0.5s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-iteration-count:infinite;
+	-moz-animation-name:swingRight;
+	-moz-animation-duration:0.5s;
+	-moz-animation-timing-function:linear;
+	-moz-animation-iteration-count:infinite;
+}
+@-webkit-keyframes swingRight {
+	from {
+		transform: rotateX(90deg) rotate3d(0,1,0, 225deg);
+		-webkit-transform: rotateX(90deg) rotate3d(0,1,0, 225deg);
+		-moz-transform: rotateX(90deg) rotate3d(0,1,0, 225deg);
+		-ms-transform: rotateX(90deg) rotate3d(0,1,0, 225deg);
+	}
+	50% {
+		transform: rotateX(90deg) rotate3d(0,1,0, 105deg);
+		-webkit-transform: rotateX(90deg) rotate3d(0,1,0, 105deg);
+		-moz-transform: rotateX(90deg) rotate3d(0,1,0, 105deg);
+		-ms-transform: rotateX(90deg) rotate3d(0,1,0, 105deg);
+	}
+	to {
+		transform: rotateX(90deg) rotate3d(0,1,0, 225deg);
+		-webkit-transform: rotateX(90deg) rotate3d(0,1,0, 225deg);
+		-moz-transform: rotateX(90deg) rotate3d(0,1,0, 225deg);
+		-ms-transform: rotateX(90deg) rotate3d(0,1,0, 225deg);
+	}
+}
+
+/**************** Draw a butterfly by CSS3 *****************/
+.wing{
+	position:absolute;
+}
+#wing01{
+	top:0px;
+	left:8px;
+	z-index:1;
+	width: 100px;
+	height: 100px;
+	border:1px solid #b0af9e;
+	box-shadow:	3px 3px 10px 1px #4e4e4e;
+	-webkit-box-shadow:	3px 3px 10px 1px #4e4e4e;
+	-moz-box-shadow:	3px 3px 10px 1px #4e4e4e;
+	border-radius:50%;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-ms-border-radius:50%;
+	background:#faf108;
+	transform: skew(-20deg, -10deg);
+	-webkit-transform: skew(-20deg, -10deg);
+	-moz-transform: skew(-20deg, -10deg);
+}
+#wing02{
+	top: 70px;
+	left:8px;
+	z-index:2;
+	width: 75px;
+	height: 75px;
+	border:1px solid #b0af9e;
+	box-shadow:	3px 3px 10px 1px #4e4e4e;
+	-webkit-box-shadow:	3px 3px 10px 1px #4e4e4e;
+	-moz-box-shadow:	3px 3px 10px 1px #4e4e4e;
+	border-radius:50%;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-ms-border-radius:50%;
+	background:#faf108;
+	transform: skew(15deg, 10deg);
+	-webkit-transform: skew(15deg, 10deg);
+	-moz-transform: skew(15deg, 10deg);
+}
+
+.body{
+	position:absolute;
+}
+#body01{
+	top: 35px;
+	left: 0px;
+	width: 15px;
+	height: 140px;
+	overflow:hidden;
+}
+#inner-body01{
+	position:absolute;
+	background:#faf108;
+	left: 0px;
+	top: 0px;
+	width: 12px;
+	height: 140px;
+	border-right: 1px solid #B0AF9E;
+	border-bottom: 1px solid #B0AF9E;
+	border-bottom-right-radius: 100%;
+}
+#body02{
+	top: 21px;
+	left: 0px;
+	width: 12px;
+	height: 15px;
+	overflow:hidden;
+}
+#inner-body02{
+	position:absolute;
+	left: -19px;
+	top: 0px;
+	width: 30px;
+	height: 30px;
+	background:#faf108;
+	border:1px solid #b0af9e;
+	border-top-right-radius:15px;
+	border-bottom-right-radius:15px;
+	border:1px solid #b0af9e;
+}
+.eye{
+	background:#767675;
+	position:absolute;
+	left: 4px;
+	top: 35px;
+	width:6px;
+	height:6px;
+	border-radius:6px;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	-ms-border-radius:6px;
+}
+.feeler{
+	position:absolute;
+	top: -15px;
+	left: 4px;
+	width: 32px;
+	height: 40px;
+	overflow:hidden;
+}
+.feeler-body{
+	position:absolute;
+	top: 0;
+	left: 0;
+	width:50px;
+	height:50px;
+	border-top-left-radius: 40px;
+	border:3px solid #faf108;
+}
+.feeler-head{
+	position:absolute;
+	top: -18px;
+	left: 32px;
+	width: 10px;
+	height: 10px;
+	background:#faf108;
+	border-radius: 8px;
+	-webkit-border-radius:8px;
+	-moz-border-radius:8px;
+	-ms-border-radius:8px;
+}
+
+

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Impressive CSS3 Product Showcase | Tutorialzine Demo</title>
+        
+        <!-- Google Webfonts and our stylesheet -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow|Open+Sans:300" />
+        <link rel="stylesheet" href="assets/css/styles02.css" />
+        <link rel="stylesheet" href="../css/common.css" />
+        <!--[if lt IE 9]>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    
+    <body>
+		<div class="head">
+			<h1><img src="assets/img/head02.png" alt="3Dチョウ"/></h1>
+		</div>
+		<div id="impress" class="impress-not-supported">
+			<div id="front" class="step" data-x="0" data-y="0">
+		        <h2>3Dチョウ</h2>
+				<h3>画像とJSを使わずCSS3のみ動画効果を実現します</h3>
+		        <p>チータオ</p>
+		        <img src="assets/img/butterfly02.png" alt="3D Butterfly" />
+		    </div>
+			
+		    <div id="transation" class="step" data-x="1100" data-y="1200" data-scale="1.8" data-rotate="190">
+				<h2>画像とJSを使わず</h2>
+				<p>Javascriptを使えば、このような動画を作るのに多くの時間が掛かります。<br><br>
+					画像を使わず、CSS3のみでチョウを描きます。<br>
+				</p>
+				<div id="butterfly01">
+					<div id="right01">
+						<div id="wing01" class="wing"></div>
+						<div id="wing02" class="wing"></div>
+						<div id="body01" class="body">
+							<div id="inner-body01"></div>
+						</div>
+						<div id="body02" class="body">
+							<div id="inner-body02"></div>
+						</div>
+						<div class="eye"></div>
+						<div class="feeler">
+							<div class="feeler-body"></div>
+						</div>
+						<div class="feeler-head"></div>
+					</div>
+					<div id="left01">
+						<div id="wing01" class="wing"></div>
+						<div id="wing02" class="wing"></div>
+						<div id="body01" class="body">
+							<div id="inner-body01"></div>
+						</div>
+						<div id="body02" class="body">
+							<div id="inner-body02"></div>
+						</div>
+						<div class="eye"></div>
+						<div class="feeler">
+							<div class="feeler-body"></div>
+						</div>
+						<div class="feeler-head"></div>
+					</div>
+				</div>
+		    </div>
+		    
+		    <div id="transform" class="step" data-x="-300" data-y="600" data-scale="0.2" data-rotate="270">
+		        <h2>推奨ブラウザ</h2>
+		        <p>CSS3　3D効果をうまく実現できるブラウザはChromeとSafariです。<br><br>
+					残念ですが、今Microsoft　IE10はCSS3 3Dはサポートしようとしているところです。<br><br>
+					今、スマホのブラウザの中にiPhoneは全部Safari、Android中でChromeとSafariは大きな割合を占めています。
+				</p>
+		        <div class="browser-notice-slides">
+					<ul class="clearfix">
+						<li>
+							<a href="https://www.google.com/intl/en/chrome/browser/" target="_blank">
+								<img src="../img/browser/chrome.png" alt="Support Chrome" />
+							</a>
+						</li>
+						<li>
+							<a href="http://www.apple.com/safari/" target="_blank">
+								<img src="../img/browser/safari.png" alt="Support Safari" />
+							</a>
+						</li>
+						<li>
+							<img src="../img/browser/xfirefox.png" alt="Not support Firefox " />
+						</li>
+						<li>
+							<img src="../img/browser/xie.png" alt="Not support Internet Explore " />
+						</li>
+						<li>
+							<img src="../img/browser/xopera.png" alt="Not support Opera " />
+						</li>
+					</ul>
+				</div>
+		    </div>
+			
+			<div id="animation" class="step" data-x="-200" data-y="1500" data-rotate="180">
+		        <h2>将来のトレンド</h2>
+				<img src="assets/img/future02.png" alt="Future"/>
+		        <p>
+					HTML5とCSS3は将来のトレンドになると思います。<br>
+					iPhoneでFlashは使えません、Flashの代わりがHTML5とCSS3になると思います。
+				</p>
+		    </div>
+		    
+		    <div id="end" class="step" data-x="-1200" data-y="1000" data-scale="0.8" data-rotate="270">
+		        <h2>以上です。</h2>
+		        <p>ご清聴ありがとうございます！</p>
+		        <img src="assets/img/Bye.png"  alt="Good Bye" />
+		    </div>
+		    
+		</div>
+		
+		<a id="arrowLeft" class="arrow">&lt;</a>
+		<a id="arrowRight" class="arrow">&gt;</a>
+		
+		<!-- Browser support information -->
+		<div class="browser-notice" class="clearfix">
+			<p>CSS3スライドショー推奨ブラウザ：</p>
+			<ul class="clearfix">
+				<li>
+					<a href="https://www.google.com/intl/en/chrome/browser/" target="_blank">
+						<img src="../img/browser/chrome.png" alt="Support Chrome" />
+					</a>
+				</li>
+				<li>
+					<a href="http://www.apple.com/safari/" target="_blank">
+						<img src="../img/browser/safari.png" alt="Support Safari" />
+					</a>
+				</li>
+				<li>
+					<a href="http://www.mozilla.org/en-US/firefox/new/" target="_blank">
+						<img src="../img/browser/firefox.png" alt="Support Firefox " />
+					</a>
+				</li>
+				<li>
+					<img src="../img/browser/xie.png" alt="Not support Internet Explore " />
+				</li>
+				<li>
+					<img src="../img/browser/xopera.png" alt="Not support Opera " />
+				</li>
+			</ul>
+			<div class="close"><img src="../img/close-icon.png" alt="Close" width="40px" height="40px" /></div>
+		</div>
+
+        <!-- JavaScript includes -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script type="text/javascript" src="assets/js/impress.js"></script> 
+		<script type="text/javascript" src="assets/js/script.js"></script>
+    </body>
+</html>
+
